@@ -36,8 +36,8 @@
     class="file-drop"
     @dragover="(e) => e.preventDefault()"
     @drop="onFileDropped">
-    <p>Drop file here</p>
-    <h1>OR</h1>
+    <!-- <p>Drop file here</p>
+    <h1>OR</h1> -->
     <div class="pickfile">
       <input type="file" @change="onFilePicked" />
     </div>
@@ -50,7 +50,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: dashed 2px grey;
+    /* border: dashed 2px grey; */
     margin: 8px 0;
     padding: 8px 0;
     transition:all 0.3s ease-in-out;

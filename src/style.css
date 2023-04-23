@@ -41,11 +41,20 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: whitesmoke;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}
+
+.block {
+  background-color: #ffffff;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+  border-radius: 4px;
 }
 
 button {
@@ -58,6 +67,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
 }
 button:hover {
   border-color: #646cff;
@@ -74,7 +84,6 @@ button:focus-visible {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 

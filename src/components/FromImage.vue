@@ -1,8 +1,10 @@
 <script setup>
   import DropFile from "./DropFile.vue";
   import { ref } from "vue";
+  import vdd from "../assets/vdd.svg";
 
   const image = ref(File);
+  image.value = vdd;
 
   const model = ref({});
 </script>
@@ -19,5 +21,8 @@
 <style scoped>
   img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
+    aspect-ratio: 1/1;
   }
 </style>

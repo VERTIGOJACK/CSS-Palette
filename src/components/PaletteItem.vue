@@ -91,14 +91,15 @@
 
 <style scoped>
   .palette-item {
+    margin: 8px;
     padding: 8px;
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr;
-    border: solid 1px;
+    border: solid 1px whitesmoke;
     border-radius: 4px;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
     background-color: white;
   }
   .colors-display {
