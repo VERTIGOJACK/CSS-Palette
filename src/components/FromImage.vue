@@ -1,7 +1,7 @@
 <script setup>
   import DropFile from "./DropFile.vue";
   import { ref } from "vue";
-  import vdd from "../assets/vdd.svg";
+  import vdd from "@/assets/VDD.svg";
 
   const image = ref(File);
   image.value = vdd;
