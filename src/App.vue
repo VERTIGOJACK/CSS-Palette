@@ -65,7 +65,7 @@
     <div class="content">
       <div class="left">
         <section class="code">
-          <button class="copy">copy</button>
+          <!-- <button class="copy">copy</button> -->
           <pre>{{ convertToCss() }}</pre>
         </section>
         <section class="image">
