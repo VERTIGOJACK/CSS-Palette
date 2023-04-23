@@ -4,7 +4,7 @@
   import { ref } from "vue";
 
   const colorsList = ref([""]);
-  const colorPrefix = ref("palette");
+  const colorPrefix = ref("color");
 
   const updateCount = (operation) => {
     if (operation == "-" && colorsList.value.length > 1) {
@@ -75,7 +75,11 @@
       <section class="maker">
         <div class="prefix">
           <label for="prefix">Color prefix:</label>
-          <input type="text" name="prefix" />
+          <input
+            type="text"
+            name="prefix"
+            v-model="colorPrefix"
+            @input="(e) => (colorPrefix = e.target.value)" />
         </div>
         <PaletteItem
           v-for="(item, index) in colorsList"
