@@ -25,7 +25,11 @@
     <label for="color">{{ $props.name }}</label>
     <div class="line">
       <input type="text" name="color" v-model="color" @input="calculateColor" />
-      <input type="color" v-model="color" @input="calculateColor" />
+      <input
+        type="color"
+        class="colorpicker"
+        v-model="color"
+        @input="calculateColor" />
     </div>
   </div>
 </template>
@@ -54,6 +58,9 @@
   input[type="text"] {
     width: 50%;
     background-color: whitesmoke;
+  }
+  .colorpicker {
+    cursor: pointer;
   }
 
   input::-webkit-color-swatch-wrapper {
